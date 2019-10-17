@@ -5,7 +5,7 @@ import { Component } from "@angular/core";
   templateUrl: "./NestedComponentsEMP.html"
 })
 export class NestedComponentsEMP {
-  FName: string = "SLK";
-  LName: string = "Soft";
+  FName: string = "adi";
+  LName: string = "jc";
   Address: string = "BLR";
 }
