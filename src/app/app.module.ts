@@ -6,7 +6,9 @@ import { EmployeeComponent } from "./Employee/Employee.component";
 import { EXP1 } from "./EXP1/EXP1.Component";
 import { Components_EXP1 } from "./components_EXP1/Components_EXP1.component";
 import { Components_EXP2 } from "./Components_EXP2/Components_EXP2.Component";
-import { templateurl } from "./templateurl/templateurl.component";
+import { templateurl } from "./Templateurl/templateurl.component";
+import { NestedComponents } from "./NestedComponents/NestedComponents.Component";
+import { NestedComponentsEMP } from "./NestedComponents/NestedComponentsEMP.Component";
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { templateurl } from "./templateurl/templateurl.component";
     EXP1,
     Components_EXP1,
     Components_EXP2,
-    templateurl
+    templateurl,
+    NestedComponents,
+    NestedComponentsEMP
   ],
   imports: [BrowserModule],
   providers: [],
@@ -25,7 +29,9 @@ import { templateurl } from "./templateurl/templateurl.component";
     EXP1,
     Components_EXP1,
     Components_EXP2,
-    templateurl
+    templateurl,
+    NestedComponents,
+    NestedComponentsEMP
   ]
 })
 export class AppModule {}
