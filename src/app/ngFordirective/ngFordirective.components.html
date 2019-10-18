@@ -1,0 +1,23 @@
+<h3>ngFor Directive EXP</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Sal</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>
+        {{employee.Id}}
+      </td>
+      <td>
+        {{employee.Name}}
+      </td>
+      <td>
+        {{employee.Sal}}
+      </td>
+    </tr>
+  </tbody>
+</table>

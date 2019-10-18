@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { EmployeeComponent } from "./Employee/Employee.component";
@@ -11,6 +12,8 @@ import { NestedComponents } from "./NestedComponents/NestedComponents.Component"
 import { NestedComponentsEMP } from "./NestedComponents/NestedComponentsEMP.Component";
 import { Styling } from "./StylingEXP/Styling.Components";
 import { ComponentToView } from "./ComponentToView/ComponentToView.Components";
+import { TwoWayDataBinding } from "./TwoWayDataBinding/TwoWayDataBinding";
+import { ngFordirective } from "./ngFordirective/ngFordirective.components";
 
 @NgModule({
   declarations: [
@@ -23,9 +26,11 @@ import { ComponentToView } from "./ComponentToView/ComponentToView.Components";
     NestedComponents,
     NestedComponentsEMP,
     Styling,
-    ComponentToView
+    ComponentToView,
+    TwoWayDataBinding,
+    ngFordirective
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [
     AppComponent,
@@ -37,7 +42,9 @@ import { ComponentToView } from "./ComponentToView/ComponentToView.Components";
     NestedComponents,
     NestedComponentsEMP,
     Styling,
-    ComponentToView
+    ComponentToView,
+    TwoWayDataBinding,
+    ngFordirective
   ]
 })
 export class AppModule {}
