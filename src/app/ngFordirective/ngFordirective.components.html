@@ -19,7 +19,7 @@
         {{employee.Sal}}
       </td>
     </tr>
-    <tr *ngIf="employee.length==0">
+    <tr *ngIf="!employees || employees.Length==0">
       <td colspan="3">
         No Data
       </td>
