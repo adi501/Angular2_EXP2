@@ -9,6 +9,7 @@ import { Components_EXP2 } from "./Components_EXP2/Components_EXP2.Component";
 import { templateurl } from "./Templateurl/templateurl.component";
 import { NestedComponents } from "./NestedComponents/NestedComponents.Component";
 import { NestedComponentsEMP } from "./NestedComponents/NestedComponentsEMP.Component";
+import { Styling } from "./StylingEXP/Styling.Components";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NestedComponentsEMP } from "./NestedComponents/NestedComponentsEMP.Comp
     Components_EXP2,
     templateurl,
     NestedComponents,
-    NestedComponentsEMP
+    NestedComponentsEMP,
+    Styling
   ],
   imports: [BrowserModule],
   providers: [],
@@ -31,7 +33,8 @@ import { NestedComponentsEMP } from "./NestedComponents/NestedComponentsEMP.Comp
     Components_EXP2,
     templateurl,
     NestedComponents,
-    NestedComponentsEMP
+    NestedComponentsEMP,
+    Styling
   ]
 })
 export class AppModule {}
