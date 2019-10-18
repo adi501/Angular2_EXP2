@@ -14,6 +14,7 @@ import { Styling } from "./StylingEXP/Styling.Components";
 import { ComponentToView } from "./ComponentToView/ComponentToView.Components";
 import { TwoWayDataBinding } from "./TwoWayDataBinding/TwoWayDataBinding";
 import { ngFordirective } from "./ngFordirective/ngFordirective.components";
+import { pipes } from "./pipes/pipes.components";
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ngFordirective } from "./ngFordirective/ngFordirective.components";
     Styling,
     ComponentToView,
     TwoWayDataBinding,
-    ngFordirective
+    ngFordirective,
+    pipes
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
@@ -44,7 +46,8 @@ import { ngFordirective } from "./ngFordirective/ngFordirective.components";
     Styling,
     ComponentToView,
     TwoWayDataBinding,
-    ngFordirective
+    ngFordirective,
+    pipes
   ]
 })
 export class AppModule {}
