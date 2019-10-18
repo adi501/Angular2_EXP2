@@ -19,5 +19,10 @@
         {{employee.Sal}}
       </td>
     </tr>
+    <tr *ngIf="employee.length==0">
+      <td colspan="3">
+        No Data
+      </td>
+    </tr>
   </tbody>
 </table>
