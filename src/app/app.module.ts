@@ -10,6 +10,7 @@ import { templateurl } from "./Templateurl/templateurl.component";
 import { NestedComponents } from "./NestedComponents/NestedComponents.Component";
 import { NestedComponentsEMP } from "./NestedComponents/NestedComponentsEMP.Component";
 import { Styling } from "./StylingEXP/Styling.Components";
+import { ComponentToView } from "./ComponentToView/ComponentToView.Components";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { Styling } from "./StylingEXP/Styling.Components";
     templateurl,
     NestedComponents,
     NestedComponentsEMP,
-    Styling
+    Styling,
+    ComponentToView
   ],
   imports: [BrowserModule],
   providers: [],
@@ -34,7 +36,8 @@ import { Styling } from "./StylingEXP/Styling.Components";
     templateurl,
     NestedComponents,
     NestedComponentsEMP,
-    Styling
+    Styling,
+    ComponentToView
   ]
 })
 export class AppModule {}
