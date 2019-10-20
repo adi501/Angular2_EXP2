@@ -21,10 +21,9 @@
         {{employee.Sal}}
       </td>
       <td>
-        {{employee.DOB| date:'dd/MM/y'}}
+        {{employee.DOB}}
       </td>
-      <td>{{employee.DOB | date:'fullDate'}}</td>
-    </tr>
+       </tr>
     <tr *ngIf="!employees || employees.Length==0">
       <td colspan="3">
         No Data
