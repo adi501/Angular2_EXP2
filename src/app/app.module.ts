@@ -15,6 +15,8 @@ import { ComponentToView } from "./ComponentToView/ComponentToView.Components";
 import { TwoWayDataBinding } from "./TwoWayDataBinding/TwoWayDataBinding";
 import { ngFordirective } from "./ngFordirective/ngFordirective.components";
 import { pipes } from "./pipes/pipes.components";
+import { CustomPipe } from "./CustomPipe/CustomPipe.Components";
+import { employeeTitlePipe } from "./CustomPipe/CustomPipe.employeeTitlePipe";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { pipes } from "./pipes/pipes.components";
     ComponentToView,
     TwoWayDataBinding,
     ngFordirective,
-    pipes
+    pipes,
+    CustomPipe,
+    employeeTitlePipe
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
@@ -47,7 +51,8 @@ import { pipes } from "./pipes/pipes.components";
     ComponentToView,
     TwoWayDataBinding,
     ngFordirective,
-    pipes
+    pipes,
+    CustomPipe
   ]
 })
 export class AppModule {}

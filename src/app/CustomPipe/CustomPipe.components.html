@@ -1,0 +1,34 @@
+<h3>pipes EXP</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Sal</th>
+      <th>DOB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees">
+      <td>
+        {{employee.Id}}
+      </td>
+      <td>
+        {{employee.Name | employeeTitle:employee.Gender}}
+      </td>
+      <td>
+        {{employee.Gender}}
+      </td>
+      <td>
+        {{employee.Sal}}
+      </td>
+      <td>{{employee.DOB }}</td>
+    </tr>
+    <tr *ngIf="!employees || employees.Length==0">
+      <td colspan="3">
+        No Data
+      </td>
+    </tr>
+  </tbody>
+</table>
